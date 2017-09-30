@@ -1,0 +1,42 @@
+ <view class="main">
+    <!--输入十二位码数-->
+    <input placeholder="请输入十二位数字" auto-focus bindinput ="enterCode12" />
+    
+
+    <button type="primary" style="background-color:#6BCC9C" bindtap="drawCanvas">点击生成条形码(EAN13)</button>
+
+    <view class="classname">
+    <text>{{warnState}}</text>
+    </view>
+
+    <!--状态信息-->
+    <view class="{{flag}}">
+
+        <view class="classname">
+        <text>校验位:{{codeOne}}</text>
+        </view>
+
+        <view class="classname">
+        <text>十三位码:{{code13}}</text>
+        </view>
+
+        <view class="classname">
+        <text>编码:{{binCode}}</text>
+        </view>
+
+        <canvas style="width: 270px; height: 260px; margin-left:80px " canvas-id="firstCanvas"></canvas>
+        
+        <view class="classname">
+        <input placeholder="输入噪声粒子个数" auto-focus bindinput ="enterNoiseNum" />
+        <input placeholder="输入噪声粒子直径" auto-focus bindinput ="enterNoiseSize" />
+
+        </view>
+        <view class="buttonGroup">
+        <button class="buttonSet1" bindtap="drawCanvas">加入噪声</button>
+
+        <button  class="buttonSet2" bindtap="rotate">旋转</button>
+        <button  class="buttonSet3" bindtap="mirror">镜面</button>
+        </view>
+    <button  class="buttonSet4"  bindtap="saveCanvas">保存图片</button>
+    </view>
+</view>

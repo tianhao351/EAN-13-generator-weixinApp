@@ -1,0 +1,36 @@
+.main{
+    margin: 10px;
+    overflow: auto;
+    word-break:break-all;
+}
+.hidden{
+    display: none;
+}
+
+.buttonGroup{
+    display: flex
+}
+
+.buttonSet1{
+    flex:1;
+    background-color: #22C9A9;
+    color: white;
+}
+
+.buttonSet2{
+    flex:1;
+    background-color:#89E3D6 ;
+    color: white;
+}
+
+.buttonSet3{
+    flex:1;
+    background-color: #C9F7C8;
+    color: white;
+}
+
+.buttonSet4{
+    flex:1;
+    background-color: #22A086;
+    color: white;
+}
